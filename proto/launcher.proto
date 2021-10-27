@@ -1,0 +1,22 @@
+syntax = "proto3";
+
+// package name for the buffer will be used later
+package launcher;
+
+// service which can be executed
+service Init {
+// function which can be called
+  rpc Open(OpenedRequest) returns (OpenedResponse);
+}
+
+// argument
+message OpenedRequest {
+// data type and position of data
+  string message = 1;
+}
+
+// return value
+message OpenedResponse {
+// data type and position of data
+  bool accepted = 1;
+}
