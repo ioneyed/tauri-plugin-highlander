@@ -8,7 +8,7 @@
             "type": "lldb",
             "request": "launch",
             "name": "Debug",
-            "program": "${workspaceFolder}/<your program>",
+            "program": "${workspaceFolder}/examples/svelte-app/src-tauri/target/debug/app",
             "args": [],
             "cwd": "${workspaceFolder}"
         }

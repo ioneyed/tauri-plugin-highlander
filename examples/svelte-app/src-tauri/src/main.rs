@@ -10,21 +10,11 @@ fn main() {
     .plugin(HighlanderBuilder::default().build())
     .run(tauri::generate_context!())
     .expect("error while running tauri application");
+  // tauri::Builder::default()
+  //   .plugin(HighlanderBuilder::default()
+  //     .event("yourEventName".to_string())
+  //     .build()
+  //   )
+  //   .run(tauri::generate_context!())
+  //   .expect("error while running tauri application");  
 }
-/*
-tauri::Builder::default()
-    .plugin(Highlander::default())
-    .run(tauri::generate_context!())
-    .expect("error while running tauri application");
-*/
-
-/*
-tauri::Builder::default()
-    .plugin(HighlanderBuilder::new()
-      .event("")
-      .listen("")
-      .broadcaster(<function>)
-    )
-    .run(tauri::generate_context!())
-    .expect("error while running tauri application");
-*/
