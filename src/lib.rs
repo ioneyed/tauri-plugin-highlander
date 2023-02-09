@@ -87,7 +87,7 @@ fn existing() -> (bool, SocketAddr) {
     let system: System = System::new_all();
     let current_pid = match sysinfo::get_current_pid() {
         Ok(_pid) => _pid,
-        Err(_) => 0 as usize,
+        Err(_) => 0,
     };
     let current_process = system.process(current_pid).unwrap().name().to_string();
     let af_flags = AddressFamilyFlags::IPV4 | AddressFamilyFlags::IPV6;
